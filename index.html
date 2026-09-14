@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NO SIGNAL</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/1200x/24/82/75/2482750d01126da3f7086b5833381ee0.jpg"
+    />
+  </head>
+
+  <body>
+    <!-- =========================
+         LOADING SCREEN
+    ========================== -->
+
+    <div class="signal-screen" id="signalScreen">
+      <div class="signal-title">
+        <h1 id="signalTitle">NO SIGNAL</h1>
+        <span>WE CAN SEE YOU.</span>
+      </div>
+
+      <p id="signalStatus">SIGNAL: NOT DETECTED</p>
+
+      <div class="loading-container">
+        <div class="loading-bar" id="loadingBar"></div>
+      </div>
+
+      <p id="loadingPercent">0%</p>
+    </div>
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <main class="home" id="home">
+      <div class="warning-popup" id="warningPopup">
+        <p>WARNING</p>
+        <h2>FOREIGN USER DETECTED</h2>
+      </div>
+
+      <div class="background-figure"></div>
+
+      <!-- HEADER -->
+
+      <header>
+        <div class="logo">NO SIGNAL</div>
+        <div class="date">2147.09.14</div>
+      </header>
+
+      <!-- NETWORK STATUS -->
+
+      <section class="network-status">
+        <div>
+          <span>NETWORK</span>
+          <strong>UNKNOWN</strong>
+        </div>
+
+        <div>
+          <span>STATUS</span>
+          <strong class="online">ONLINE</strong>
+        </div>
+
+        <div>
+          <span>CONNECTION</span>
+          <strong id="connectionStatus">STABLE</strong>
+        </div>
+      </section>
+
+      <!-- WELCOME -->
+
+      <section class="welcome">
+        <p class="small-text">WELCOME, USER</p>
+
+        <h2>THE NETWORK IS ONLINE.</h2>
+
+        <p>Explore the network. Some information may be unavailable.</p>
+      </section>
+
+      <!-- NETWORK ALERT -->
+
+      <section class="network-alert" id="networkAlert">
+        <p id="userCount">6,284,193 USERS ONLINE</p>
+
+        <p id="alertMessage"></p>
+      </section>
+
+      <!-- =========================
+             MAIN MENU
+        ========================== -->
+
+      <nav class="menu">
+        <button id="newsButton">
+          <span>01</span>
+          NEWS
+        </button>
+
+        <button id="peopleButton">
+          <span>02</span>
+          PEOPLE
+        </button>
+
+        <button id="archiveButton">
+          <span>03</span>
+          ARCHIVE
+        </button>
+
+        <button id="marketButton">
+          <span>04</span>
+          MARKET
+        </button>
+
+        <button id="systemButton">
+          <span>05</span>
+          SYSTEM
+        </button>
+      </nav>
+
+      <!-- =========================
+             FINAL DOOR
+        ========================== -->
+
+      <div class="final-door">
+        <p>WHEN YOU ARE READY</p>
+
+        <button id="searchButton">SEARCH THE NETWORK</button>
+      </div>
+
+      <!-- =========================
+             NEWS
+        ========================== -->
+
+      <section class="content-section news-section" id="newsSection">
+        <div class="section-header">
+          <p class="small-text">NO SIGNAL / NEWS</p>
+          <h2>NETWORK NEWS</h2>
+        </div>
+
+        <article class="news-item">
+          <span>2147.09.13</span>
+          <h3>NETWORK RESTORED AFTER 116 YEARS</h3>
+          <p>
+            The network has unexpectedly returned after disappearing during the
+            event known as "The Blackout".
+          </p>
+        </article>
+
+        <article class="news-item">
+          <span>2147.09.12</span>
+          <h3>23 USERS REPORTED MISSING</h3>
+          <p>
+            Several users disappeared from the network. Their accounts remain
+            partially active.
+          </p>
+        </article>
+
+        <article class="news-item">
+          <span>2147.09.14</span>
+          <h3>UNKNOWN CONNECTION DETECTED</h3>
+          <p>
+            An external connection has been detected. Origin remains unknown.
+          </p>
+        </article>
+      </section>
+
+      <!-- =========================
+             PEOPLE
+        ========================== -->
+
+      <section class="content-section people-section" id="peopleSection">
+        <div class="section-header">
+          <p class="small-text">NO SIGNAL / PEOPLE</p>
+          <h2>USER DATABASE</h2>
+        </div>
+
+        <div class="person" id="strangePerson">
+          <div>
+            <span class="person-name">MAYA EL-SAYED</span>
+            <p>LAST ACTIVE: 2147</p>
+          </div>
+
+          <strong class="online">ONLINE</strong>
+        </div>
+
+        <div class="person">
+          <div>
+            <span class="person-name">ADAM RASHED</span>
+            <p>LAST ACTIVE: 2146</p>
+          </div>
+
+          <strong>OFFLINE</strong>
+        </div>
+
+        <div class="person strange-user">
+          <div>
+            <span class="person-name">MAYA EL-SAYED</span>
+            <p>LAST ACTIVE: 2031</p>
+          </div>
+
+          <strong class="online">ONLINE</strong>
+        </div>
+
+        <p class="person-message" id="personMessage">
+          USER RECORDS SHOULD NOT CONTAIN DUPLICATE IDENTITIES.
+        </p>
+      </section>
+
+      <!-- =========================
+             ARCHIVE
+        ========================== -->
+
+      <section class="content-section archive-section" id="archive">
+        <div class="section-header">
+          <p class="small-text">NO SIGNAL / ARCHIVE</p>
+          <h2>CLASSIFIED ARCHIVE</h2>
+        </div>
+
+        <div class="archive-files" id="archiveFiles"></div>
+
+        <!-- ARCHIVE DOCUMENT -->
+
+        <div class="archive-document" id="archiveDocument">
+          <p class="small-text" id="archiveNumber">FILE —</p>
+
+          <h3 id="archiveTitle">SELECT A FILE</h3>
+
+          <p class="archive-date" id="archiveDate"></p>
+
+          <p class="archive-status" id="archiveStatus"></p>
+
+          <p class="archive-warning" id="archiveWarning"></p>
+
+          <p id="archiveText">Select an archive file to continue.</p>
+
+          <div class="last-message">
+            <span>LAST MESSAGE</span>
+
+            <p id="archiveMessage"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             SEARCH
+        ========================== -->
+
+      <section class="search-section content-section" id="searchSection">
+        <div class="search-header">
+          <p class="small-text">NO SIGNAL / SEARCH</p>
+
+          <h2>SEARCH THE NETWORK</h2>
+        </div>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="ENTER SEARCH TERM..."
+          />
+
+          <button id="searchSubmit">SEARCH</button>
+        </div>
+
+        <div class="search-result" id="searchResult">
+          <p class="small-text">SEARCH RESULT</p>
+
+          <h3 id="resultTitle">—</h3>
+
+          <p id="resultText">ENTER A SEARCH TERM.</p>
+        </div>
+      </section>
+
+      <!-- =========================
+             MARKET
+        ========================== -->
+
+      <section class="content-section market-section" id="marketSection">
+        <div class="section-header">
+          <p class="small-text">NO SIGNAL / MARKET</p>
+
+          <h2>NETWORK MARKET</h2>
+        </div>
+
+        <div class="market-item">
+          <div>
+            <h3>MEMORY STORAGE</h3>
+            <p>500 GB / PERSONAL ARCHIVE</p>
+          </div>
+
+          <strong>214 CREDITS</strong>
+        </div>
+
+        <div class="market-item">
+          <div>
+            <h3>IDENTITY BACKUP</h3>
+            <p>FULL USER RECORD</p>
+          </div>
+
+          <strong>490 CREDITS</strong>
+        </div>
+
+        <div class="market-item">
+          <div>
+            <h3>UNKNOWN ACCESS</h3>
+            <p>ORIGIN UNAVAILABLE</p>
+          </div>
+
+          <strong>PRICE UNKNOWN</strong>
+        </div>
+      </section>
+
+      <!-- =========================
+             SYSTEM
+        ========================== -->
+
+      <section class="content-section system-section" id="systemSection">
+        <div class="section-header">
+          <p class="small-text">NO SIGNAL / SYSTEM</p>
+
+          <h2>SYSTEM STATUS</h2>
+        </div>
+
+        <div class="system-list">
+          <p>
+            <span>CORE</span>
+            OPERATIONAL
+          </p>
+
+          <p>
+            <span>ARCHIVE</span>
+            ONLINE
+          </p>
+
+          <p>
+            <span>USER DATABASE</span>
+            STABLE
+          </p>
+
+          <p>
+            <span>FOREIGN CONNECTION</span>
+            DETECTED
+          </p>
+
+          <p>
+            <span>CONNECTION ORIGIN</span>
+            UNKNOWN
+          </p>
+
+          <p>
+            <span>USER IDENTIFICATION</span>
+            FAILED
+          </p>
+        </div>
+
+        <p class="system-message" id="systemMessage">
+          SYSTEM MESSAGE: PLEASE DISCONNECT.
+        </p>
+      </section>
+
+      <!-- =========================
+             FOOTER
+        ========================== -->
+
+      <footer>
+        <span>SIGNAL</span>
+
+        <div class="signal-line">
+          <div></div>
+        </div>
+
+        <span>63%</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
